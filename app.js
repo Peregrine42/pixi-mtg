@@ -1,10 +1,10 @@
 "use strict";
-var express = require('express');
-var app = express();
-var request = require('request');
+let express = require('express');
+let app = express();
+let request = require('request');
 
 app.get('/scene-graph-1', function(req, res){
-  static_graph = {
+  let static_graph = {
     parent: "root",
     children: []
   }
